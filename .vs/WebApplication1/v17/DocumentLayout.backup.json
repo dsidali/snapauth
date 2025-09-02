@@ -1,0 +1,225 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\controllers\\auth2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\auth2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\services\\snapchatauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\snapchatauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\services\\isnapchatauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\isnapchatauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\services\\inmemorytokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\inmemorytokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\services\\itokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\itokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\models\\storedtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\storedtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\models\\snapchatconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\snapchatconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|c:\\users\\sid\\source\\repos\\webapplication1\\webapplication1\\models\\snapchattokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B41F9A3F-D2EF-4F74-A419-D5AA78596BE2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\snapchattokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Auth2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\Auth2Controller.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Auth2Controller.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\Auth2Controller.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Auth2Controller.cs",
+              "ViewState": "AgIAAFEAAACAzMzMzMwowEgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:20:11.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-13T21:12:33.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-13T21:12:04.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:12:02.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:11:12.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SnapchatAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\SnapchatAuthService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\SnapchatAuthService.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\SnapchatAuthService.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\SnapchatAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:10:10.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISnapchatAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\ISnapchatAuthService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\ISnapchatAuthService.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\ISnapchatAuthService.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\ISnapchatAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:09:40.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InMemoryTokenStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\InMemoryTokenStorage.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\InMemoryTokenStorage.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\InMemoryTokenStorage.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\InMemoryTokenStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:08:47.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITokenStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\ITokenStorage.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\ITokenStorage.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Services\\ITokenStorage.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\ITokenStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:08:22.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StoredToken.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\StoredToken.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\StoredToken.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\StoredToken.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\StoredToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:07:31.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SnapchatConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\SnapchatConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\SnapchatConfig.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\SnapchatConfig.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\SnapchatConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:06:35.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SnapchatTokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\SnapchatTokenResponse.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\SnapchatTokenResponse.cs",
+              "ToolTip": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\Models\\SnapchatTokenResponse.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\SnapchatTokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:06:34.856Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
