@@ -46,7 +46,8 @@ namespace WebApplication1.Services
                 ["state"] = state
             };
 
-            var queryString = string.Join("&", queryParams.Select(kvp => $"{kvp.Key}={Uri.EscapeDataString(kvp.Value)}"));
+          // var queryString = string.Join("&", queryParams.Select(kvp => $"{kvp.Key}={Uri.EscapeDataString(kvp.Value)}"));
+            var queryString = string.Join("&", queryParams.Select(kvp => $"{kvp.Key}={(kvp.Value)}"));
             return $"{authUrl}?{queryString}";
         }
 

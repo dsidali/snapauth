@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FQiE1QqF2WE=",
+  "dgSpecHash": "ZEwCrYoYf58=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sid\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Sid\\source\\repos\\snapauth\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sid\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Sid\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
