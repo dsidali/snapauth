@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Text;
 using System.Text.Json;
 using WebApplication1.Models;
@@ -14,17 +15,27 @@ public class SnapchatSegmentService : ISnapchatSegmentService
         _httpClientFactory = httpClientFactory;
     }
 
-    public async Task<string> CreateSegmentAsync(string adAccountId, string name, string description, string token)
+    public async Task<string> CreateSegmentAsync(List<SnapchatSegment> segments, string token)
     {
         var httpClient = _httpClientFactory.CreateClient();
 
+        // Use the first segment to get the ad account ID for the URL
+        var adAccountId = segments.FirstOrDefault()?.AdAccountId;
+        if (string.IsNullOrEmpty(adAccountId))
+        {
+            throw new ArgumentException("AdAccountId is required in at least one segment");
+        }
+
         var requestContent = new
         {
-            name,
-            description,
-            ad_account_id = adAccountId,
-            source_type = "FIRST_PARTY",
-            retention_in_days = 180
+            segments = segments.Select(s => new
+            {
+                name = s.Name,
+                description = s.Description,
+                ad_account_id = s.AdAccountId,
+                source_type = s.SourceType ?? "FIRST_PARTY",
+                retention_in_days = s.RetentionInDays
+            }).ToList()
         };
 
         var content = new StringContent(
@@ -68,8 +79,15 @@ public class SnapchatSegmentService : ISnapchatSegmentService
     {
         var httpClient = _httpClientFactory.CreateClient();
 
+        // Transform the data to match the expected API format
+        var formattedUsers = request.Users?.Select(user => new
+        {
+            schema = user.Schema,
+            data = user.Data?.Select(row => row.ToArray()).ToArray()
+        }).ToList();
+
         var content = new StringContent(
-            JsonSerializer.Serialize(new { users = request.Users }),
+            JsonSerializer.Serialize(new { users = formattedUsers }),
             Encoding.UTF8,
             "application/json");
 

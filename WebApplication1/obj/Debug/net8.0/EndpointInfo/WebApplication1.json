@@ -436,7 +436,7 @@
         },
         "additionalProperties": false
       },
-      "SnapchatSegmentRequest": {
+      "SnapchatSegment": {
         "type": "object",
         "properties": {
           "name": {
@@ -447,8 +447,29 @@
             "type": "string",
             "nullable": true
           },
+          "sourceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "retentionInDays": {
+            "type": "integer",
+            "format": "int32"
+          },
           "adAccountId": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SnapchatSegmentRequest": {
+        "type": "object",
+        "properties": {
+          "segments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SnapchatSegment"
+            },
             "nullable": true
           }
         },

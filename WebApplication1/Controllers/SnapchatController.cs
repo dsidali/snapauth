@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using WebApplication1.Models;
 using WebApplication1.Services;
 
@@ -23,25 +24,16 @@ public class SnapchatController : ControllerBase
     [HttpPost("segments")]
     public async Task<IActionResult> CreateSegment([FromBody] SnapchatSegmentRequest request)
     {
-        if (request == null)
+        if (request == null || request.Segments == null || request.Segments.Count == 0)
         {
-            return BadRequest(new { error = "Request body is required." });
-        }
-
-        if (string.IsNullOrWhiteSpace(request.AdAccountId) ||
-            string.IsNullOrWhiteSpace(request.Name) ||
-            string.IsNullOrWhiteSpace(request.Description))
-        {
-            return BadRequest(new { error = "AdAccountId, Name, and Description are required." });
+            return BadRequest(new { error = "Request body with segments is required." });
         }
 
         try
         {
             var storedToken = await _snapchatAuthService.GetValidTokenAsync(DefaultUserId);
             var result = await _snapchatSegmentService.CreateSegmentAsync(
-                request.AdAccountId,
-                request.Name,
-                request.Description,
+                request.Segments,
                 storedToken.AccessToken);
 
             return Content(result, "application/json");
