@@ -11,14 +11,17 @@ public class SnapchatController : ControllerBase
 {
     private readonly ISnapchatSegmentService _snapchatSegmentService;
     private readonly ISnapchatAuthService _snapchatAuthService;
+    private readonly IHttpClientFactory _httpClientFactory;
     private const string DefaultUserId = "default";
 
     public SnapchatController(
         ISnapchatSegmentService snapchatSegmentService,
-        ISnapchatAuthService snapchatAuthService)
+        ISnapchatAuthService snapchatAuthService,
+        IHttpClientFactory httpClientFactory)
     {
         _snapchatSegmentService = snapchatSegmentService;
         _snapchatAuthService = snapchatAuthService;
+        _httpClientFactory = httpClientFactory;
     }
 
     [HttpPost("segments")]
@@ -148,6 +151,153 @@ public class SnapchatController : ControllerBase
             var result = await _snapchatSegmentService.DeleteSegmentAsync(segmentId, storedToken.AccessToken);
 
             return Content(result, "application/json");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { error = $"An error occurred: {ex.Message}" });
+        }
+    }
+
+    [HttpGet("me")]
+    public async Task<IActionResult> GetMe()
+    {
+        try
+        {
+            var storedToken = await _snapchatAuthService.GetValidTokenAsync(DefaultUserId);
+            var httpClient = _httpClientFactory.CreateClient();
+
+            // Set the authorization header with the Bearer token
+            httpClient.DefaultRequestHeaders.Authorization = 
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", storedToken.AccessToken);
+
+            // Make the request to the Snapchat API
+            var response = await httpClient.GetAsync("https://adsapi.snapchat.com/v1/me");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                return StatusCode((int)response.StatusCode, new { error = errorContent });
+            }
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { error = $"An error occurred: {ex.Message}" });
+        }
+    }
+
+    [HttpGet("organizations")]
+    public async Task<IActionResult> GetOrganizations([FromQuery] bool withAdAccounts = true)
+    {
+        try
+        {
+            var storedToken = await _snapchatAuthService.GetValidTokenAsync(DefaultUserId);
+            var httpClient = _httpClientFactory.CreateClient();
+
+            // Set the authorization header with the Bearer token
+            httpClient.DefaultRequestHeaders.Authorization = 
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", storedToken.AccessToken);
+
+            // Build the URL with query parameters
+            var url = $"https://adsapi.snapchat.com/v1/me/organizations?with_ad_accounts={withAdAccounts.ToString().ToLower()}";
+
+            // Make the request to the Snapchat API
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                return StatusCode((int)response.StatusCode, new { error = errorContent });
+            }
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { error = $"An error occurred: {ex.Message}" });
+        }
+    }
+
+    [HttpGet("organizations/{organizationId}")]
+    public async Task<IActionResult> GetOrganization(string organizationId)
+    {
+        if (string.IsNullOrWhiteSpace(organizationId))
+        {
+            return BadRequest(new { error = "OrganizationId is required." });
+        }
+
+        try
+        {
+            var storedToken = await _snapchatAuthService.GetValidTokenAsync(DefaultUserId);
+            var httpClient = _httpClientFactory.CreateClient();
+
+            // Set the authorization header with the Bearer token
+            httpClient.DefaultRequestHeaders.Authorization = 
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", storedToken.AccessToken);
+
+            // Build the URL with the organization ID
+            var url = $"https://adsapi.snapchat.com/v1/organizations/{organizationId}";
+
+            // Make the request to the Snapchat API
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                return StatusCode((int)response.StatusCode, new { error = errorContent });
+            }
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { error = $"An error occurred: {ex.Message}" });
+        }
+    }
+
+    [HttpGet("organizations/{organizationId}/adaccounts")]
+    public async Task<IActionResult> GetAdAccounts(string organizationId)
+    {
+        if (string.IsNullOrWhiteSpace(organizationId))
+        {
+            return BadRequest(new { error = "OrganizationId is required." });
+        }
+
+        try
+        {
+            var storedToken = await _snapchatAuthService.GetValidTokenAsync(DefaultUserId);
+            var httpClient = _httpClientFactory.CreateClient();
+
+            // Set the authorization header with the Bearer token
+            httpClient.DefaultRequestHeaders.Authorization = 
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", storedToken.AccessToken);
+
+            // Build the URL with the organization ID
+            var url = $"https://adsapi.snapchat.com/v1/organizations/{organizationId}/adaccounts";
+
+            // Make the request to the Snapchat API
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                return StatusCode((int)response.StatusCode, new { error = errorContent });
+            }
         }
         catch (Exception ex)
         {

@@ -374,6 +374,84 @@
           }
         }
       }
+    },
+    "/api/Snapchat/me": {
+      "get": {
+        "tags": [
+          "Snapchat"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Snapchat/organizations": {
+      "get": {
+        "tags": [
+          "Snapchat"
+        ],
+        "parameters": [
+          {
+            "name": "withAdAccounts",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Snapchat/organizations/{organizationId}": {
+      "get": {
+        "tags": [
+          "Snapchat"
+        ],
+        "parameters": [
+          {
+            "name": "organizationId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Snapchat/organizations/{organizationId}/adaccounts": {
+      "get": {
+        "tags": [
+          "Snapchat"
+        ],
+        "parameters": [
+          {
+            "name": "organizationId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
