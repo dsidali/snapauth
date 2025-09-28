@@ -85,57 +85,63 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.Auth2Controller",
-    "Method": "Authorize",
-    "RelativePath": "api/Auth2/authorize",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "returnUrl",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.Auth2Controller",
-    "Method": "Callback",
-    "RelativePath": "api/Auth2/callback",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "code",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "state",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.Auth2Controller",
-    "Method": "RefreshToken",
-    "RelativePath": "api/Auth2/refresh/{userId}",
+    "ContainingType": "WebApplication1.Controllers.EmailGeneratorController",
+    "Method": "GenerateEmails",
+    "RelativePath": "api/EmailGenerator/generate",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "request",
+        "Type": "WebApplication1.Models.EmailGenerationRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.HashController",
+    "Method": "ComputeSha256",
+    "RelativePath": "api/Hash/sha256",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Models.HashRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.HashController",
+    "Method": "ComputeSha256List",
+    "RelativePath": "api/Hash/sha256/list",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Models.HashListRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetAllSegments",
+    "RelativePath": "api/Snapchat/adaccounts/{adAccountId}/segments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adAccountId",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -143,15 +149,47 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.Auth2Controller",
-    "Method": "RevokeToken",
-    "RelativePath": "api/Auth2/revoke/{userId}",
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "CreateSegment",
+    "RelativePath": "api/Snapchat/segments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Models.SnapchatSegmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetSegment",
+    "RelativePath": "api/Snapchat/segments/{segmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "segmentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "DeleteSegment",
+    "RelativePath": "api/Snapchat/segments/{segmentId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "segmentId",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -159,15 +197,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.Auth2Controller",
-    "Method": "GetToken",
-    "RelativePath": "api/Auth2/token/{userId}",
-    "HttpMethod": "GET",
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "RemoveAllUsersFromSegment",
+    "RelativePath": "api/Snapchat/segments/{segmentId}/all_users",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "segmentId",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -175,24 +213,24 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "AddUsersToSegment",
+    "RelativePath": "api/Snapchat/segments/{segmentId}/users",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.WeatherForecast, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "segmentId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Models.AddUsersToSegmentRequest",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]

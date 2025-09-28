@@ -62,10 +62,10 @@ C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebass
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\WebAppli.7D14BD69.Up2Date
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\WebApplication1.dll
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\refint\WebApplication1.dll
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

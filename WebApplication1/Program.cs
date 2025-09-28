@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 builder.Services.AddSingleton<ITokenStorage, InMemoryTokenStorage>();
 builder.Services.AddSingleton<ISnapchatAuthService, SnapchatAuthService>();
+builder.Services.AddSingleton<EmailGeneratorService>();
+builder.Services.AddSingleton<ISnapchatSegmentService, SnapchatSegmentService>();
 
 
 builder.Services.AddCors(options =>
