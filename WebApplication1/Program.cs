@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddHttpClient();
-builder.Services.AddSingleton<ITokenStorage, InMemoryTokenStorage>();
+builder.Services.AddSingleton<ITokenStorage, RedisTokenStorage>();
 builder.Services.AddSingleton<ISnapchatAuthService, SnapchatAuthService>();
 builder.Services.AddSingleton<EmailGeneratorService>();
 builder.Services.AddSingleton<ISnapchatSegmentService, SnapchatSegmentService>();
