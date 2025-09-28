@@ -150,6 +150,64 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetMe",
+    "RelativePath": "api/Snapchat/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetOrganizations",
+    "RelativePath": "api/Snapchat/organizations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "withAdAccounts",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetOrganization",
+    "RelativePath": "api/Snapchat/organizations/{organizationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "organizationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
+    "Method": "GetAdAccounts",
+    "RelativePath": "api/Snapchat/organizations/{organizationId}/adaccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "organizationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.SnapchatController",
     "Method": "CreateSegment",
     "RelativePath": "api/Snapchat/segments",
     "HttpMethod": "POST",
