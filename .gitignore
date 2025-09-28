@@ -367,3 +367,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+/WebApplication1/obj/Debug/net8.0/WebApplication1.AssemblyInfo.cs
