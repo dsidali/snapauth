@@ -368,3 +368,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 /WebApplication1/obj/Debug/net8.0/WebApplication1.AssemblyInfo.cs
+/WebApplication1/obj/Debug/net8.0/WebApplication1.AssemblyInfoInputs.cache
