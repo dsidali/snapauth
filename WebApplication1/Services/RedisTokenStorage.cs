@@ -26,7 +26,8 @@ namespace WebApplication1.Services
             var timeUntilExpiration = token.ExpiresAt - DateTime.UtcNow;
 
             // Store with expiration time
-            await _database.StringSetAsync(key, value, timeUntilExpiration);
+         //   await _database.StringSetAsync(key, value, timeUntilExpiration);
+            await _database.StringSetAsync(key, value, null); //no expiry
         }
 
         public async Task<StoredToken> GetTokenAsync(string userId)
