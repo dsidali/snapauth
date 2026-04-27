@@ -34,12 +34,16 @@ namespace WebApplication1.Controllers
                 var state = $"{userId}:{Guid.NewGuid()}";
                 var authUrl = _authService.GenerateAuthorizationUrl(state);
 
-                return Ok(new
-                {
-                    message = "Open this URL in your browser to authorize",
-                    authorizationUrl = authUrl,
-                    state = state
-                });
+                //return Ok(new
+                //{
+                //    message = "Open this URL in your browser to authorize",
+                //    authorizationUrl = authUrl,
+                //    state = state
+                //});
+
+
+
+                return  Redirect(authUrl);
             }
             catch (Exception ex)
             {
@@ -92,7 +96,8 @@ namespace WebApplication1.Controllers
                     userId = userId,
                     accessToken = tokenResponse.access_token,
                     expiresIn = tokenResponse.expires_in,
-                    tokenType = tokenResponse.token_type
+                    tokenType = tokenResponse.token_type,
+                    refreshToken = tokenResponse.refresh_token
                 });
             }
             catch (Exception ex)

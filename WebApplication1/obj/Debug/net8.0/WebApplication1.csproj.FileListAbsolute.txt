@@ -77,3 +77,4 @@ C:\Users\Sid\source\repos\snapauth\WebApplication1\bin\Debug\net8.0\System.Secur
 C:\Users\Sid\source\repos\snapauth\WebApplication1\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\Sid\source\repos\snapauth\WebApplication1\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Sid\source\repos\snapauth\WebApplication1\obj\Debug\net8.0\swae.build.ex.cache
